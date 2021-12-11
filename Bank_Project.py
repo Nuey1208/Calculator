@@ -38,7 +38,7 @@ if long == 1:#fixed((2)scb bank, krungsri bank)
     print("K Bank")
     Saving_Account(amount)#K Bank มีแต่ออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
-    print("No interest rate for 1 month with Fixed Deposit Account")
+    print("No interest rate for",long, "month with Fixed Deposit Account")
 
 
     print("Krungsri Bank")#KrungSri มีประจำแบบ1เดือน
@@ -49,7 +49,7 @@ if long == 1:#fixed((2)scb bank, krungsri bank)
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
-    print("No interest rate for 1 month with Fixed Deposit Account")
+    print("No interest rate for",long, "month with Fixed Deposit Account")
 
 if long == 3:# fixed(all)
     print("SCB Bank")
@@ -105,7 +105,7 @@ if long == 9:# fixed((3) scb, k bank, bkk bank)
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
-    print("No interest rate for 1 month with Fixed Deposit Account")
+    print("No interest rate for",long, "month with Fixed Deposit Account")
 
 
     print("BKK Bank")
@@ -171,3 +171,27 @@ if long == 36:# fixed(all)
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.75)#มีประจำ
+
+else:
+    print("SCB Bank")
+    Saving_Account(amount)#มีออมทรัพย์
+    print("Fixed Deposit Account")#ไม่มีประจำ
+    print("No interest rate for",long, "month with Fixed Deposit Account")
+
+
+    print("K Bank")
+    Saving_Account(amount)#มีออมทรัพย์
+    print("Fixed Deposit Account")#ไม่มีประจำ
+    print("No interest rate for",long, "month with Fixed Deposit Account")
+    
+
+    print("Krungsri Bank")
+    Saving_Account(amount)#มีออมทรัพย์
+    print("Fixed Deposit Account")#ไม่มีประจำ
+    print("No interest rate for",long, "month with Fixed Deposit Account")
+
+
+    print("BKK Bank")
+    Saving_Account(amount)#มีออมทรัพย์
+    print("Fixed Deposit Account")#ไม่มีประจำ
+    print("No interest rate for",long, "month with Fixed Deposit Account")

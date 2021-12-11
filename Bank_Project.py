@@ -21,6 +21,9 @@ def Fixed_Account(r):#print ประจำ account
 name = input("Enter Name : ")
 surname = input("Enter Surname : ")
 amount = float(input("Amount to deposit : "))
+while amount < 1:
+    print("Invalid Amount to deposit require")
+    amount = float(input("Amount to deposit : "))
 long = int(input("Time require to deposit : "))
 while long < 1:
     print("Invalid time require")
@@ -28,23 +31,19 @@ while long < 1:
 
 
 '''print both type of account'''
-
 if long == 1:#fixed((2)scb bank, krungsri bank)
     print("SCB Bank")#SCBมีแบบ1เดือน
     Saving_Account(amount)
     Fixed_Account(0.25)#ประจำ
-
 
     print("K Bank")
     Saving_Account(amount)#K Bank มีแต่ออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
     print("No interest rate for",long, "month with Fixed Deposit Account")
 
-
     print("Krungsri Bank")#KrungSri มีประจำแบบ1เดือน
     Saving_Account(amount)
     Fixed_Account(0.1)
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -56,16 +55,13 @@ if long == 3:# fixed(all)
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.32)#มีประจำ
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
-    Fixed_Account(0.32)#มีประจำ
-    
+    Fixed_Account(0.32)#มีประจำ    
 
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.32)#มีประจำ
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -76,16 +72,13 @@ if long == 6:# fixed(all)
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
     
-
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -96,17 +89,14 @@ if long == 9:# fixed((3) scb, k bank, bkk bank)
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
-    
 
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
     print("No interest rate for",long, "month with Fixed Deposit Account")
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -117,16 +107,13 @@ if long == 12:# fixed(all)
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
     
-
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.40)#มีประจำ
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -137,16 +124,13 @@ if long == 24:# fixed(all)
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.45)#มีประจำ
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.45)#มีประจำ
-    
 
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.45)#มีประจำ
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -157,16 +141,13 @@ if long == 36:# fixed(all)
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.65)#มีประจำ
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.65)#มีประจำ
-    
 
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     Fixed_Account(0.65)#มีประจำ
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
@@ -178,18 +159,15 @@ else:
     print("Fixed Deposit Account")#ไม่มีประจำ
     print("No interest rate for",long, "month with Fixed Deposit Account")
 
-
     print("K Bank")
     Saving_Account(amount)#มีออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
     print("No interest rate for",long, "month with Fixed Deposit Account")
     
-
     print("Krungsri Bank")
     Saving_Account(amount)#มีออมทรัพย์
     print("Fixed Deposit Account")#ไม่มีประจำ
     print("No interest rate for",long, "month with Fixed Deposit Account")
-
 
     print("BKK Bank")
     Saving_Account(amount)#มีออมทรัพย์
